@@ -1,0 +1,11 @@
+D:\teste\API.PDV\API.PDV.WebApi\core\domain\bin\Debug\net8.0\API.PDV.Domain.deps.json
+D:\teste\API.PDV\API.PDV.WebApi\core\domain\bin\Debug\net8.0\API.PDV.Domain.dll
+D:\teste\API.PDV\API.PDV.WebApi\core\domain\bin\Debug\net8.0\API.PDV.Domain.pdb
+D:\teste\API.PDV\API.PDV.WebApi\core\domain\obj\Debug\net8.0\API.PDV.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\teste\API.PDV\API.PDV.WebApi\core\domain\obj\Debug\net8.0\API.PDV.Domain.AssemblyInfoInputs.cache
+D:\teste\API.PDV\API.PDV.WebApi\core\domain\obj\Debug\net8.0\API.PDV.Domain.AssemblyInfo.cs
+D:\teste\API.PDV\API.PDV.WebApi\core\domain\obj\Debug\net8.0\API.PDV.Domain.csproj.CoreCompileInputs.cache
+D:\teste\API.PDV\API.PDV.WebApi\core\domain\obj\Debug\net8.0\API.PDV.Domain.dll
+D:\teste\API.PDV\API.PDV.WebApi\core\domain\obj\Debug\net8.0\refint\API.PDV.Domain.dll
+D:\teste\API.PDV\API.PDV.WebApi\core\domain\obj\Debug\net8.0\API.PDV.Domain.pdb
+D:\teste\API.PDV\API.PDV.WebApi\core\domain\obj\Debug\net8.0\ref\API.PDV.Domain.dll

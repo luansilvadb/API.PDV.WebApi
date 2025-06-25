@@ -1,0 +1,106 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "API PDV Multitenant",
+    "version": "1.0.0",
+    "description": "Documentação dos endpoints REST após Sprint 08 (hardening, validação, segurança, multitenancy)."
+  },
+  "paths": {
+    "/api/auth/login": {
+      "post": {
+        "summary": "Autenticação e obtenção de JWT",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "usuario": { "type": "string" },
+                  "senha": { "type": "string" }
+                },
+                "required": ["usuario", "senha"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Token JWT gerado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "token": { "type": "string" }
+                  }
+                }
+              }
+            }
+          },
+          "401": { "description": "Credenciais inválidas" }
+        }
+      }
+    },
+    "/api/produtos": {
+      "post": {
+        "summary": "Cria um novo produto",
+        "security": [{ "bearerAuth": [] }],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Produto criado" },
+          "400": { "description": "Erro de validação" },
+          "401": { "description": "Não autenticado" }
+        }
+      }
+    },
+    "/api/estoque": {
+      "get": {
+        "summary": "Consulta o estoque atual",
+        "security": [{ "bearerAuth": [] }],
+        "parameters": [
+          {
+            "name": "X-Tenant",
+            "in": "header",
+            "required": true,
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Lista de itens em estoque" },
+          "401": { "description": "Não autenticado" },
+          "403": { "description": "Sem permissão" }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
+    "schemas": {
+      "ProdutoDto": {
+        "type": "object",
+        "properties": {
+          "nome": { "type": "string" },
+          "preco": { "type": "number", "format": "double" },
+          "estoque": { "type": "integer" }
+        },
+        "required": ["nome", "preco", "estoque"]
+      }
+    }
+  }
+}

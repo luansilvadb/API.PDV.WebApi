@@ -1,0 +1,6 @@
+@API.PDV.WebApi_HostAddress = http://localhost:5159
+
+GET {{API.PDV.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

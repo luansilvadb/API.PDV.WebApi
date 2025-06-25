@@ -1,0 +1,58 @@
+erDiagram
+    TENANT {
+        UUID id PK
+        VARCHAR name
+        VARCHAR slug
+        TIMESTAMP created_at
+    }
+    EMPRESA {
+        UUID id PK
+        VARCHAR nome
+        VARCHAR cnpj
+        VARCHAR endereco
+        TIMESTAMP criado_em
+    }
+    PRODUTO {
+        UUID id PK
+        VARCHAR nome
+        NUMERIC preco
+        BOOLEAN ativo
+    }
+    ESTOQUE {
+        UUID id PK
+        UUID produto_id FK
+        NUMERIC quantidade
+        VARCHAR lote
+        TIMESTAMP atualizado_em
+    }
+    VENDA {
+        UUID id PK
+        UUID empresa_id FK
+        TIMESTAMP data_hora
+        NUMERIC total
+        NUMERIC troco
+        BOOLEAN finalizada
+    }
+    ITEM_VENDA {
+        UUID id PK
+        UUID venda_id FK
+        UUID produto_id FK
+        VARCHAR descricao_produto
+        NUMERIC quantidade
+        NUMERIC preco_unitario
+        NUMERIC total
+    }
+    PAGAMENTO {
+        UUID id PK
+        UUID venda_id FK
+        NUMERIC valor
+        VARCHAR forma_pagamento
+        TIMESTAMP data_hora
+    }
+
+    TENANT ||--o{ EMPRESA : "possui"
+    EMPRESA ||--o{ VENDA : "realiza"
+    VENDA ||--o{ ITEM_VENDA : "contém"
+    PRODUTO ||--o{ ITEM_VENDA : "é vendido em"
+    PRODUTO ||--o{ ESTOQUE : "possui"
+    VENDA ||--o{ PAGAMENTO : "recebe"

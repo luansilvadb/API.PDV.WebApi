@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "AZfxVJXCwtoJXAIRw4wXWG+nxu8FvQwCQmjd0fwBi3I=",
+  "Source": "API.PDV.WebApi",
+  "BasePath": "_content/API.PDV.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

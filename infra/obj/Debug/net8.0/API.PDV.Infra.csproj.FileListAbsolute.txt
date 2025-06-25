@@ -1,0 +1,15 @@
+D:\teste\API.PDV\API.PDV.WebApi\infra\bin\Debug\net8.0\API.PDV.Infra.deps.json
+D:\teste\API.PDV\API.PDV.WebApi\infra\bin\Debug\net8.0\API.PDV.Infra.dll
+D:\teste\API.PDV\API.PDV.WebApi\infra\bin\Debug\net8.0\API.PDV.Infra.pdb
+D:\teste\API.PDV\API.PDV.WebApi\infra\bin\Debug\net8.0\API.PDV.Domain.dll
+D:\teste\API.PDV\API.PDV.WebApi\infra\bin\Debug\net8.0\API.PDV.Domain.pdb
+D:\teste\API.PDV\API.PDV.WebApi\infra\obj\Debug\net8.0\API.PDV.Infra.csproj.AssemblyReference.cache
+D:\teste\API.PDV\API.PDV.WebApi\infra\obj\Debug\net8.0\API.PDV.Infra.GeneratedMSBuildEditorConfig.editorconfig
+D:\teste\API.PDV\API.PDV.WebApi\infra\obj\Debug\net8.0\API.PDV.Infra.AssemblyInfoInputs.cache
+D:\teste\API.PDV\API.PDV.WebApi\infra\obj\Debug\net8.0\API.PDV.Infra.AssemblyInfo.cs
+D:\teste\API.PDV\API.PDV.WebApi\infra\obj\Debug\net8.0\API.PDV.Infra.csproj.CoreCompileInputs.cache
+D:\teste\API.PDV\API.PDV.WebApi\infra\obj\Debug\net8.0\API.PDV..2F4DF021.Up2Date
+D:\teste\API.PDV\API.PDV.WebApi\infra\obj\Debug\net8.0\API.PDV.Infra.dll
+D:\teste\API.PDV\API.PDV.WebApi\infra\obj\Debug\net8.0\refint\API.PDV.Infra.dll
+D:\teste\API.PDV\API.PDV.WebApi\infra\obj\Debug\net8.0\API.PDV.Infra.pdb
+D:\teste\API.PDV\API.PDV.WebApi\infra\obj\Debug\net8.0\ref\API.PDV.Infra.dll
